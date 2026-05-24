@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>산지직송 — 흙냄새 그대로, 식탁까지</title>
+  <meta name="description" content="농부의 손에서 식탁까지. 투명한 재배 과정과 K-나물 트렌드를 만나는 산지직송 쇼핑몰." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="logo">
+        <span class="logo-mark">産</span>
+        <span class="logo-text">산지직송<small>SANJI JIGSONG</small></span>
+      </a>
+      <nav class="main-nav">
+        <a href="#farmers">농부 소개</a>
+        <a href="#process">재배 과정</a>
+        <a href="#knamul">K-나물</a>
+        <a href="#namul">나물 코너</a>
+        <a href="#shop">전체 상품</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="검색">🔍</button>
+        <button class="icon-btn cart" aria-label="장바구니">
+          🧺<span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="btn btn-ghost">로그인</button>
+      </div>
+    </div>
+    <div class="ticker">
+      <div class="ticker-track">
+        <span>🚚 오늘 아침 수확 → 내일 도착</span>
+        <span>🌱 농약 잔류검사 매주 공개</span>
+        <span>🔥 K-나물 글로벌 트렌드 진입 — 곤드레, 취나물 품귀</span>
+        <span>💚 산지 직거래로 농부 수익 2.4배</span>
+        <span>🚚 오늘 아침 수확 → 내일 도착</span>
+        <span>🌱 농약 잔류검사 매주 공개</span>
+        <span>🔥 K-나물 글로벌 트렌드 진입 — 곤드레, 취나물 품귀</span>
+        <span>💚 산지 직거래로 농부 수익 2.4배</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="eyebrow">FARM TO TABLE · 산지직송</span>
+        <h1>
+          흙냄새 그대로,<br />
+          <em>식탁까지.</em>
+        </h1>
+        <p class="lede">
+          중간 유통은 없습니다. 어느 밭, 어느 농부의 손에서 자랐는지
+          이름과 얼굴, 그리고 재배 일지를 함께 보냅니다.
+        </p>
+        <div class="hero-cta">
+          <a href="#knamul" class="btn btn-primary">K-나물 보러가기 →</a>
+          <a href="#process" class="btn btn-outline">재배 과정 투명하게 보기</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>132</strong><span>계약 농가</span></div>
+          <div><strong>0</strong><span>중간 유통</span></div>
+          <div><strong>24h</strong><span>수확 → 배송</span></div>
+          <div><strong>주 1회</strong><span>잔류농약 공개</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card hero-card-1">
+          <div class="card-pill">오늘 수확</div>
+          <div class="card-veg">🥬</div>
+          <div class="card-name">강원 평창 곤드레</div>
+          <div class="card-farmer">— 김영자 농부</div>
+        </div>
+        <div class="hero-card hero-card-2">
+          <div class="card-pill alt">실시간 재배일지</div>
+          <div class="diary-line"><span>05/22</span> 새벽 안개, 잎 상태 양호</div>
+          <div class="diary-line"><span>05/23</span> 무농약 7일차, 진딧물 0</div>
+          <div class="diary-line"><span>05/24</span> 05:40 수확 완료</div>
+        </div>
+        <div class="hero-card hero-card-3">
+          <div class="card-pill hot">🔥 HOT K-NAMUL</div>
+          <div class="card-veg">🌿</div>
+          <div class="card-name">취나물 묶음</div>
+          <div class="card-price">₩6,900<small> / 200g</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Promise -->
+  <section class="trust">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-num">01</div>
+          <h3>얼굴 있는 농산물</h3>
+          <p>모든 상품에 농부 이름과 밭의 위치, 재배 일지가 함께 포장됩니다.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num">02</div>
+          <h3>주간 잔류농약 리포트</h3>
+          <p>매주 공인 분석기관 검사 결과를 PDF로 공개합니다. 숨길 게 없습니다.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num">03</div>
+          <h3>수익의 78%, 농부에게</h3>
+          <p>중간상이 없으니 농부의 손에 더 많이, 소비자의 식탁에 더 신선하게.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num">04</div>
+          <h3>24시간 산지직송</h3>
+          <p>새벽 수확 → 당일 포장 → 익일 도착. 흙이 마르기 전에 보냅니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Farmers -->
+  <section id="farmers" class="section section-farmers">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">OUR FARMERS</span>
+        <h2>오늘의 농부</h2>
+        <p>132명의 계약 농가 중, 이번 주 수확하는 분들을 소개합니다.</p>
+      </div>
+
+      <div class="farmer-grid">
+        <article class="farmer-card">
+          <div class="farmer-photo" style="background: linear-gradient(135deg,#a8c79a,#5e8a4f);">
+            <span class="farmer-emoji">👩‍🌾</span>
+            <span class="farmer-badge">곤드레 30년</span>
+          </div>
+          <div class="farmer-body">
+            <h3>김영자 <small>· 강원 평창</small></h3>
+            <p class="farmer-quote">"새벽 안개를 먹고 자란 곤드레는 향이 달라요. 저희 어머니도 똑같이 키우셨죠."</p>
+            <ul class="farmer-meta">
+              <li>📍 해발 700m 고랭지</li>
+              <li>🌱 무농약 인증 12년차</li>
+              <li>🥬 곤드레 · 취나물 · 참나물</li>
+            </ul>
+            <a href="#" class="link-arrow">김영자 농부의 밭 보기 →</a>
+          </div>
+        </article>
+
+        <article class="farmer-card">
+          <div class="farmer-photo" style="background: linear-gradient(135deg,#e8b87a,#a86a2c);">
+            <span class="farmer-emoji">👨‍🌾</span>
+            <span class="farmer-badge">유기농 인증</span>
+          </div>
+          <div class="farmer-body">
+            <h3>박정수 <small>· 충북 단양</small></h3>
+            <p class="farmer-quote">"풀과 같이 자라게 둡니다. 잡초도 흙을 살리거든요. 그래서 천천히, 더 단단해져요."</p>
+            <ul class="farmer-meta">
+              <li>📍 소백산 자락 자연농</li>
+              <li>🌱 유기농 인증 8년차</li>
+              <li>🥬 두릅 · 더덕 · 산마늘(명이)</li>
+            </ul>
+            <a href="#" class="link-arrow">박정수 농부의 밭 보기 →</a>
+          </div>
+        </article>
+
+        <article class="farmer-card">
+          <div class="farmer-photo" style="background: linear-gradient(135deg,#b9d4e8,#4a7a9a);">
+            <span class="farmer-emoji">🧑‍🌾</span>
+            <span class="farmer-badge">청년 농부</span>
+          </div>
+          <div class="farmer-body">
+            <h3>이서준 <small>· 전남 곡성</small></h3>
+            <p class="farmer-quote">"데이터로 농사 짓습니다. 토양 수분·EC·일조량을 매일 기록하고 공개합니다."</p>
+            <ul class="farmer-meta">
+              <li>📍 섬진강 변 평야</li>
+              <li>🌱 스마트팜 + 노지 혼합</li>
+              <li>🥬 시금치 · 쑥갓 · 청경채</li>
+            </ul>
+            <a href="#" class="link-arrow">이서준 농부의 밭 보기 →</a>
+          </div>
+        </article>
+
+        <article class="farmer-card">
+          <div class="farmer-photo" style="background: linear-gradient(135deg,#d8a8b8,#8a4a5e);">
+            <span class="farmer-emoji">👩‍🌾</span>
+            <span class="farmer-badge">전통 손나물</span>
+          </div>
+          <div class="farmer-body">
+            <h3>최순분 <small>· 경북 영양</small></h3>
+            <p class="farmer-quote">"산에서 직접 캐는 나물입니다. 손가락 마디는 거칠지만, 그게 진짜라는 증거예요."</p>
+            <ul class="farmer-meta">
+              <li>📍 일월산 자락 채집</li>
+              <li>🌱 100% 자연산 채집</li>
+              <li>🥬 고사리 · 두릅 · 미역취</li>
+            </ul>
+            <a href="#" class="link-arrow">최순분 농부의 밭 보기 →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process: Transparency -->
+  <section id="process" class="section section-process">
+    <div class="container">
+      <div class="section-head light">
+        <span class="eyebrow">FULL TRANSPARENCY</span>
+        <h2>씨앗에서 식탁까지, 모두 공개합니다</h2>
+        <p>한 묶음의 나물이 당신에게 닿기까지 — 5단계의 모든 과정을 추적할 수 있습니다.</p>
+      </div>
+
+      <ol class="process-track">
+        <li class="process-step">
+          <div class="step-num">01</div>
+          <div class="step-icon">🌱</div>
+          <h3>파종 / 채집 시작</h3>
+          <p>씨앗 품종, 채집지 GPS, 시작 일자를 등록합니다.</p>
+          <span class="step-tag">공개: 품종 · 좌표 · 일자</span>
+        </li>
+        <li class="process-step">
+          <div class="step-num">02</div>
+          <div class="step-icon">📔</div>
+          <h3>재배 일지 매일 기록</h3>
+          <p>물 주기, 잡초 관리, 토양 상태를 농부가 매일 작성합니다.</p>
+          <span class="step-tag">공개: 일지 전문 · 사진</span>
+        </li>
+        <li class="process-step">
+          <div class="step-num">03</div>
+          <div class="step-icon">🧪</div>
+          <h3>주간 잔류농약 검사</h3>
+          <p>공인 분석기관에서 250종 잔류농약을 매주 검사합니다.</p>
+          <span class="step-tag">공개: 분석 리포트 PDF</span>
+        </li>
+        <li class="process-step">
+          <div class="step-num">04</div>
+          <div class="step-icon">🌅</div>
+          <h3>새벽 수확 · 산지 포장</h3>
+          <p>주문 다음 날 새벽, 수확 즉시 산지에서 포장합니다.</p>
+          <span class="step-tag">공개: 수확 시각 · 포장자</span>
+        </li>
+        <li class="process-step">
+          <div class="step-num">05</div>
+          <div class="step-icon">🚚</div>
+          <h3>저온 직배송</h3>
+          <p>2~4℃ 저온 차량으로 흙이 마르기 전에 도착합니다.</p>
+          <span class="step-tag">공개: 차량 온도 로그</span>
+        </li>
+      </ol>
+
+      <!-- Live diary -->
+      <div class="live-diary">
+        <div class="live-diary-head">
+          <span class="live-dot"></span>
+          <h3>실시간 재배 일지 — 김영자 농부의 곤드레밭</h3>
+          <span class="live-meta">강원 평창 · 해발 712m</span>
+        </div>
+        <div class="diary-feed">
+          <div class="diary-row">
+            <span class="diary-date">05/24<br /><small>금</small></span>
+            <div class="diary-body">
+              <strong>05:40 수확 완료</strong>
+              <p>잎이 두툼하고 색이 짙음. 새벽 이슬 머금어 향이 좋음. 12kg 수확.</p>
+              <div class="diary-pics">
+                <span class="diary-pic">🌿</span><span class="diary-pic">📸</span><span class="diary-pic">🧺</span>
+              </div>
+            </div>
+          </div>
+          <div class="diary-row">
+            <span class="diary-date">05/23<br /><small>목</small></span>
+            <div class="diary-body">
+              <strong>무농약 7일차 점검</strong>
+              <p>진딧물 0마리. 잡초 손으로 제거. 토양 수분 적정. 내일 수확 예정.</p>
+            </div>
+          </div>
+          <div class="diary-row">
+            <span class="diary-date">05/22<br /><small>수</small></span>
+            <div class="diary-body">
+              <strong>새벽 안개, 잎 상태 양호</strong>
+              <p>안개가 두텁게 내려 광합성 늦게 시작. 잎 두께 측정 0.42mm — 평균보다 굵음.</p>
+            </div>
+          </div>
+          <div class="diary-row">
+            <span class="diary-date">05/20<br /><small>월</small></span>
+            <div class="diary-body">
+              <strong>잔류농약 검사 의뢰</strong>
+              <p>한국식품과학연구원에 250종 검사 의뢰. 결과는 05/24 공개.</p>
+              <a href="#" class="diary-link">📄 지난주 리포트 PDF</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- K-NAMUL -->
+  <section id="knamul" class="section section-knamul">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow hot">🔥 GLOBAL TRENDING</span>
+        <h2>K-나물 코너</h2>
+        <p>
+          뉴욕 미슐랭과 도쿄 셀럽이 주목한 한국의 산나물.<br />
+          식이섬유 · 미네랄 · 폴리페놀이 풍부한 슈퍼푸드, 이제 산지에서 바로.
+        </p>
+      </div>
+
+      <div class="knamul-banner">
+        <div class="knamul-banner-text">
+          <span class="badge-live">LIVE TREND</span>
+          <h3>"K-NAMUL is the next kimchi"</h3>
+          <p>— The New York Times Food, 2026</p>
+        </div>
+        <div class="knamul-banner-stats">
+          <div><strong>+412%</strong><span>해외 검색량 YoY</span></div>
+          <div><strong>38개국</strong><span>수출 진행</span></div>
+          <div><strong>#kNamul</strong><span>TikTok 2.1억 조회</span></div>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card hot-card">
+          <div class="product-img" style="background: linear-gradient(160deg,#7aa66a,#3d5e2f);">
+            <span class="product-emoji">🌿</span>
+            <span class="ribbon">K-NAMUL #1</span>
+          </div>
+          <div class="product-body">
+            <span class="tag">취나물 · 강원 평창</span>
+            <h3>새벽수확 취나물 200g</h3>
+            <p class="product-farmer">👩‍🌾 김영자 농부</p>
+            <div class="product-foot">
+              <span class="price">₩6,900</span>
+              <button class="btn btn-sm btn-primary add-cart">담기</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card hot-card">
+          <div class="product-img" style="background: linear-gradient(160deg,#9bb87a,#4f6d34);">
+            <span class="product-emoji">🥬</span>
+            <span class="ribbon">품절임박</span>
+          </div>
+          <div class="product-body">
+            <span class="tag">곤드레 · 강원 평창</span>
+            <h3>고랭지 곤드레 300g</h3>
+            <p class="product-farmer">👩‍🌾 김영자 농부</p>
+            <div class="product-foot">
+              <span class="price">₩8,500</span>
+              <button class="btn btn-sm btn-primary add-cart">담기</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card hot-card">
+          <div class="product-img" style="background: linear-gradient(160deg,#c8a878,#7a5a2e);">
+            <span class="product-emoji">🌱</span>
+            <span class="ribbon">신상</span>
+          </div>
+          <div class="product-body">
+            <span class="tag">두릅 · 충북 단양</span>
+            <h3>자연산 두릅 250g</h3>
+            <p class="product-farmer">👨‍🌾 박정수 농부</p>
+            <div class="product-foot">
+              <span class="price">₩12,900</span>
+              <button class="btn btn-sm btn-primary add-cart">담기</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card hot-card">
+          <div class="product-img" style="background: linear-gradient(160deg,#8ab89a,#3a6a4a);">
+            <span class="product-emoji">🍃</span>
+            <span class="ribbon">한정수량</span>
+          </div>
+          <div class="product-body">
+            <span class="tag">산마늘(명이) · 충북 단양</span>
+            <h3>산마늘 잎 150g</h3>
+            <p class="product-farmer">👨‍🌾 박정수 농부</p>
+            <div class="product-foot">
+              <span class="price">₩9,800</span>
+              <button class="btn btn-sm btn-primary add-cart">담기</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card hot-card">
+          <div class="product-img" style="background: linear-gradient(160deg,#a8a86a,#5e5e2c);">
+            <span class="product-emoji">🌾</span>
+            <span class="ribbon">자연채집</span>
+          </div>
+          <div class="product-body">
+            <span class="tag">고사리 · 경북 영양</span>
+            <h3>건고사리 100g</h3>
+            <p class="product-farmer">👩‍🌾 최순분 농부</p>
+            <div class="product-foot">
+              <span class="price">₩11,000</span>
+              <button class="btn btn-sm btn-primary add-cart">담기</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card hot-card">
+          <div class="product-img" style="background: linear-gradient(160deg,#b8c87a,#5a6a2c);">
+            <span class="product-emoji">🌿</span>
+            <span class="ribbon">베스트</span>
+          </div>
+          <div class="product-body">
+            <span class="tag">참나물 · 강원 평창</span>
+            <h3>향긋한 참나물 200g</h3>
+            <p class="product-farmer">👩‍🌾 김영자 농부</p>
+            <div class="product-foot">
+              <span class="price">₩7,200</span>
+              <button class="btn btn-sm btn-primary add-cart">담기</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="knamul-recipe">
+        <div class="recipe-card">
+          <span class="recipe-tag">🍳 글로벌 K-RECIPE</span>
+          <h3>취나물 페스토 파스타</h3>
+          <p>뉴욕 셰프 David Chang이 추천한 K-나물 활용법. 바질 대신 데친 취나물로 향을 살립니다.</p>
+          <a href="#" class="link-arrow">레시피 보기 →</a>
+        </div>
+        <div class="recipe-card">
+          <span class="recipe-tag">🥗 홈쿠킹</span>
+          <h3>곤드레 영양밥</h3>
+          <p>고랭지 곤드레 한 줌으로 만드는 한 솥. 들기름과 양조간장만 있으면 완성.</p>
+          <a href="#" class="link-arrow">레시피 보기 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Namul Corner -->
+  <section id="namul" class="section section-namul">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">SEASONAL · 봄여름 제철</span>
+        <h2>나물 코너</h2>
+        <p>제철 따라, 산 따라, 들 따라. 한국의 사계가 식탁으로 옵니다.</p>
+      </div>
+
+      <div class="namul-tabs" role="tablist">
+        <button class="tab active" data-tab="spring">봄나물</button>
+        <button class="tab" data-tab="summer">여름나물</button>
+        <button class="tab" data-tab="fall">가을나물</button>
+        <button class="tab" data-tab="dry">건나물</button>
+      </div>
+
+      <div class="namul-panels">
+        <div class="namul-panel active" data-panel="spring">
+          <div class="namul-grid">
+            <div class="namul-item"><span class="namul-emoji">🌱</span><h4>달래</h4><p class="namul-region">전남 곡성</p><span class="namul-price">₩4,500 / 100g</span></div>
+            <div class="namul-item"><span class="namul-emoji">🌿</span><h4>냉이</h4><p class="namul-region">충남 서산</p><span class="namul-price">₩4,900 / 150g</span></div>
+            <div class="namul-item"><span class="namul-emoji">🍀</span><h4>쑥</h4><p class="namul-region">전북 부안</p><span class="namul-price">₩5,200 / 200g</span></div>
+            <div class="namul-item"><span class="namul-emoji">🌾</span><h4>두릅</h4><p class="namul-region">충북 단양</p><span class="namul-price">₩12,900 / 250g</span></div>
+            <div class="namul-item"><span class="namul-emoji">🥬</span><h4>원추리</h4><p class="namul-region">경북 영양</p><span class="namul-price">₩6,800 / 200g</span></div>
+            <div class="namul-item"><span class="namul-emoji">🌿</span><h4>참나물</h4><p class="namul-region">강원 평창</p><span class="namul-price">₩7,200 / 200g</span></div>
+          </div>
+        </div>
+
+        <div class="namul-panel" data-panel="summer">
+          <div class="namul-grid">
+            <div class="namul-item"><span class="namul-emoji">🌿</span><h4>비름나물</h4><p class="namul-region">전남 화순</p><span class="namul-price">₩4,200 / 200g</span></div>
+            <div class="namul-item"><span class="namul-emoji">🍃</span><h4>깻잎</h4><p class="namul-region">충남 금산</p><span class="namul-price">₩3,500 / 50장</span></div>
+            <div class="namul-item"><span class="namul-emoji">🌱</span><h4>호박잎</h4><p class="namul-region">경남 함양</p><span class="namul-price">₩3,800 / 20장</span></div>
+            <div class="namul-item"><span class="namul-emoji">🌿</span><h4>고구마순</h4><p class="namul-region">전남 영암</p><span class="namul-price">₩5,500 / 300g</span></div>
+            <div class="namul-item"><span class="namul-emoji">🍀</span><h4>부추</h4><p class="namul-region">경북 영천</p><span class="namul-price">₩4,000 / 200g</span></div>
+            <div class="namul-item"><span class="namul-emoji">🌾</span><h4>방아잎</h4><p class="namul-region">경남 산청</p><span class="namul-price">₩5,900 / 100g</span></div>
+          </div>
+        </div>
+
+        <div class="namul-panel" data-panel="fall">
+          <div class="namul-grid">
+            <div class="namul-item"><span class="namul-emoji">🍂</span><h4>토란대</h4><p class="namul-region">전남 곡성</p><span class="namul-price">₩6,500 / 300g</span></div>
+            <div class="namul-item"><span class="namul-emoji">🌿</span><h4>고춧잎</h4><p class="namul-region">경북 영양</p><span class="namul-price">₩5,800 / 200g</span></div>
+            <div class="namul-item"><span class="namul-emoji">🍃</span><h4>박나물</h4><p class="namul-region">강원 정선</p><span class="namul-price">₩7,200 / 300g</span></div>
+            <div class="namul-item"><span class="namul-emoji">🌾</span><h4>들깨순</h4><p class="namul-region">충북 옥천</p><span class="namul-price">₩5,500 / 200g</span></div>
+            <div class="namul-item"><span class="namul-emoji">🌱</span><h4>무청</h4><p class="namul-region">강원 횡성</p><span class="namul-price">₩4,800 / 500g</span></div>
+            <div class="namul-item"><span class="namul-emoji">🍀</span><h4>가지나물</h4><p class="namul-region">경남 의령</p><span class="namul-price">₩4,500 / 300g</span></div>
+          </div>
+        </div>
+
+        <div class="namul-panel" data-panel="dry">
+          <div class="namul-grid">
+            <div class="namul-item"><span class="namul-emoji">🥢</span><h4>건고사리</h4><p class="namul-region">경북 영양</p><span class="namul-price">₩11,000 / 100g</span></div>
+            <div class="namul-item"><span class="namul-emoji">🥢</span><h4>건취나물</h4><p class="namul-region">강원 평창</p><span class="namul-price">₩13,500 / 100g</span></div>
+            <div class="namul-item"><span class="namul-emoji">🥢</span><h4>시래기</h4><p class="namul-region">강원 양구</p><span class="namul-price">₩7,800 / 200g</span></div>
+            <div class="namul-item"><span class="namul-emoji">🥢</span><h4>건도라지</h4><p class="namul-region">전남 진도</p><span class="namul-price">₩9,500 / 100g</span></div>
+            <div class="namul-item"><span class="namul-emoji">🥢</span><h4>건곤드레</h4><p class="namul-region">강원 정선</p><span class="namul-price">₩12,000 / 100g</span></div>
+            <div class="namul-item"><span class="namul-emoji">🥢</span><h4>건묵나물 모둠</h4><p class="namul-region">전국 모둠</p><span class="namul-price">₩18,900 / 5종</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop / All products -->
+  <section id="shop" class="section section-shop">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">SHOP ALL</span>
+        <h2>전체 상품</h2>
+        <p>채소 · 과일 · 곡물 · 가공품. 모든 상품은 농부 이름과 함께 옵니다.</p>
+      </div>
+
+      <div class="cat-row">
+        <a class="cat" href="#"><span>🥬</span>잎채소</a>
+        <a class="cat" href="#"><span>🥕</span>뿌리채소</a>
+        <a class="cat" href="#"><span>🍎</span>제철 과일</a>
+        <a class="cat" href="#"><span>🌾</span>곡물 · 잡곡</a>
+        <a class="cat" href="#"><span>🫘</span>콩류</a>
+        <a class="cat" href="#"><span>🍯</span>가공품</a>
+        <a class="cat" href="#"><span>🥚</span>축산 · 유정란</a>
+        <a class="cat" href="#"><span>🐟</span>수산 직송</a>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-img" style="background:linear-gradient(160deg,#f0a868,#a85e2e);">
+            <span class="product-emoji">🍠</span>
+          </div>
+          <div class="product-body">
+            <span class="tag">고구마 · 전남 해남</span>
+            <h3>꿀밤고구마 3kg</h3>
+            <p class="product-farmer">👨‍🌾 정만호 농부</p>
+            <div class="product-foot"><span class="price">₩18,900</span><button class="btn btn-sm btn-primary add-cart">담기</button></div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-img" style="background:linear-gradient(160deg,#e8d878,#a89a3a);">
+            <span class="product-emoji">🌾</span>
+          </div>
+          <div class="product-body">
+            <span class="tag">현미 · 충남 당진</span>
+            <h3>유기농 현미 5kg</h3>
+            <p class="product-farmer">👨‍🌾 한상규 농부</p>
+            <div class="product-foot"><span class="price">₩32,000</span><button class="btn btn-sm btn-primary add-cart">담기</button></div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-img" style="background:linear-gradient(160deg,#d878a8,#8a3a6a);">
+            <span class="product-emoji">🍓</span>
+          </div>
+          <div class="product-body">
+            <span class="tag">딸기 · 충남 논산</span>
+            <h3>설향 딸기 1kg</h3>
+            <p class="product-farmer">👩‍🌾 이혜경 농부</p>
+            <div class="product-foot"><span class="price">₩24,500</span><button class="btn btn-sm btn-primary add-cart">담기</button></div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-img" style="background:linear-gradient(160deg,#a8d878,#5a8a3a);">
+            <span class="product-emoji">🥒</span>
+          </div>
+          <div class="product-body">
+            <span class="tag">오이 · 강원 횡성</span>
+            <h3>가시오이 1.5kg</h3>
+            <p class="product-farmer">👨‍🌾 강민철 농부</p>
+            <div class="product-foot"><span class="price">₩9,800</span><button class="btn btn-sm btn-primary add-cart">담기</button></div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-img" style="background:linear-gradient(160deg,#f8c878,#c88a2e);">
+            <span class="product-emoji">🥚</span>
+          </div>
+          <div class="product-body">
+            <span class="tag">유정란 · 경기 양평</span>
+            <h3>방사 유정란 30구</h3>
+            <p class="product-farmer">👩‍🌾 윤미선 농부</p>
+            <div class="product-foot"><span class="price">₩14,900</span><button class="btn btn-sm btn-primary add-cart">담기</button></div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-img" style="background:linear-gradient(160deg,#c8a878,#8a5a2e);">
+            <span class="product-emoji">🍯</span>
+          </div>
+          <div class="product-body">
+            <span class="tag">꿀 · 지리산</span>
+            <h3>야생화꿀 500g</h3>
+            <p class="product-farmer">👨‍🌾 송기태 농부</p>
+            <div class="product-foot"><span class="price">₩28,000</span><button class="btn btn-sm btn-primary add-cart">담기</button></div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-img" style="background:linear-gradient(160deg,#a8b8d8,#4a5e8a);">
+            <span class="product-emoji">🫘</span>
+          </div>
+          <div class="product-body">
+            <span class="tag">서리태 · 강원 정선</span>
+            <h3>검정 서리태 1kg</h3>
+            <p class="product-farmer">👩‍🌾 박옥자 농부</p>
+            <div class="product-foot"><span class="price">₩16,500</span><button class="btn btn-sm btn-primary add-cart">담기</button></div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-img" style="background:linear-gradient(160deg,#f88a78,#a83e2e);">
+            <span class="product-emoji">🍅</span>
+          </div>
+          <div class="product-body">
+            <span class="tag">대저 짭짤이 · 부산</span>
+            <h3>대저 토마토 2kg</h3>
+            <p class="product-farmer">👨‍🌾 김도현 농부</p>
+            <div class="product-foot"><span class="price">₩22,000</span><button class="btn btn-sm btn-primary add-cart">담기</button></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe -->
+  <section class="subscribe">
+    <div class="container subscribe-grid">
+      <div>
+        <span class="eyebrow">월 정기 배송</span>
+        <h2>매주 다른 농부의<br />꾸러미가 도착합니다</h2>
+        <p>4주 동안 4명의 농부, 제철 채소·나물 8~10종. 농부의 손편지가 함께 옵니다.</p>
+        <ul class="sub-list">
+          <li>✓ 매주 다른 농가에서 직송</li>
+          <li>✓ 재배 일지 · 농부 손편지 동봉</li>
+          <li>✓ 언제든 일시정지 / 해지</li>
+        </ul>
+      </div>
+      <form class="sub-form" onsubmit="event.preventDefault(); alert('정기 배송 신청이 접수되었습니다 🌱');">
+        <h3>₩39,000<small> / 주</small></h3>
+        <label>받으실 이메일
+          <input type="email" placeholder="you@example.com" required />
+        </label>
+        <label>배송 지역
+          <select>
+            <option>수도권</option><option>강원/충청</option>
+            <option>경상</option><option>전라/제주</option>
+          </select>
+        </label>
+        <button class="btn btn-primary btn-lg" type="submit">정기배송 시작하기</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo logo-foot">
+          <span class="logo-mark">産</span>
+          <span class="logo-text">산지직송<small>SANJI JIGSONG</small></span>
+        </div>
+        <p class="foot-tag">흙냄새 그대로, 식탁까지.<br />중간 유통 없는 농부의 직거래 쇼핑몰.</p>
+      </div>
+      <div>
+        <h4>쇼핑</h4>
+        <a href="#knamul">K-나물</a>
+        <a href="#namul">나물 코너</a>
+        <a href="#shop">전체 상품</a>
+        <a href="#">월 정기배송</a>
+      </div>
+      <div>
+        <h4>신뢰</h4>
+        <a href="#farmers">농부 소개</a>
+        <a href="#process">재배 과정</a>
+        <a href="#">잔류농약 리포트</a>
+        <a href="#">인증 현황</a>
+      </div>
+      <div>
+        <h4>고객센터</h4>
+        <p>📞 1588-0000<br />평일 09:00 – 18:00</p>
+        <p>cs@sanjijigsong.kr</p>
+      </div>
+    </div>
+    <div class="container foot-bottom">
+      <small>© 2026 산지직송 SANJI JIGSONG. 농부와 함께.</small>
+      <small>사업자등록번호 000-00-00000 · 통신판매업 2026-서울-0000</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
